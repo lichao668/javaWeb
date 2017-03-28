@@ -17,6 +17,20 @@
 		<servlet-name>ServletDemo2</servlet-name>
 		<servlet-class>com.servlet.demo.ServletDemo2</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletDownload</display-name>
+		<servlet-name>ServletDownload</servlet-name>
+		<servlet-class>com.servlet.demo.ServletDownload</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletYanZhengMa</display-name>
+		<servlet-name>ServletYanZhengMa</servlet-name>
+		<servlet-class>com.servlet.demo.ServletYanZhengMa</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>ServletDemo1</servlet-name>
 		<url-pattern>/ServletDemo1</url-pattern>
@@ -24,6 +38,14 @@
 	<servlet-mapping>
 		<servlet-name>ServletDemo2</servlet-name>
 		<url-pattern>/ServletDemo2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletDownload</servlet-name>
+		<url-pattern>/ServletDownload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletYanZhengMa</servlet-name>
+		<url-pattern>/ServletYanZhengMa</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

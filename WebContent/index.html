@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+</head>
+
+<body>
+	<!--
+	将验证码应用到页面中
+-->
+
+	<form action="" method="post">
+		用户名：<input type="text" name="userName" /><br> 密码：
+		<input type="password" name="pwd" /><br> 验证码：
+		<input type="text" name="yCode" />
+		<img src="/javaWeb/ServletYanZhengMa" alt="" id="img1" />
+		<a href="javascript:changeCode()">看不清，换一张</a><br/>
+		<input type="submit" name="" value="登录">
+
+
+	</form>
+
+<script type="text/javascript">
+		function changeCode() {
+			
+			var img = document.getElementById("img1");
+			img.src = '/javaWeb/ServletYanZhengMa?time=' + new Date().getTime();
+			console.log(img);
+		}
+
+	</script>
+</body>
+
+</html>
