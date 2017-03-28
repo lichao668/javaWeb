@@ -4,8 +4,6 @@
 2. 继承 javax.servlet.GenericServlet
 3. 继承 javax.servlet.http.HttpServlet
 
-
-
 ``` java
     //Servlet 生命周期
 
