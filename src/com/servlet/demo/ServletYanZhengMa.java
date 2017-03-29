@@ -28,6 +28,11 @@ public class ServletYanZhengMa extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		//设置浏览器不缓存
+		response.setHeader("pragma", "no-cache");
+		response.setHeader("cache-control", "no-cache");
+		response.setHeader("expires", "0");
+		
 		int width = 110;
 		int height = 25;
 

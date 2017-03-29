@@ -31,6 +31,41 @@
 		<servlet-name>ServletYanZhengMa</servlet-name>
 		<servlet-class>com.servlet.demo.ServletYanZhengMa</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletRefresh</display-name>
+		<servlet-name>ServletRefresh</servlet-name>
+		<servlet-class>com.servlet.demo.ServletRefresh</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletCdx1</display-name>
+		<servlet-name>ServletCdx1</servlet-name>
+		<servlet-class>com.servlet.demo.ServletCdx1</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletCdx2</display-name>
+		<servlet-name>ServletCdx2</servlet-name>
+		<servlet-class>com.servlet.demo.ServletCdx2</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletUserAgent</display-name>
+		<servlet-name>ServletUserAgent</servlet-name>
+		<servlet-class>com.servlet.demo.ServletUserAgent</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletParameter</display-name>
+		<servlet-name>ServletParameter</servlet-name>
+		<servlet-class>com.servlet.demo.ServletParameter</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>ServletDemo1</servlet-name>
 		<url-pattern>/ServletDemo1</url-pattern>
@@ -46,6 +81,26 @@
 	<servlet-mapping>
 		<servlet-name>ServletYanZhengMa</servlet-name>
 		<url-pattern>/ServletYanZhengMa</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletRefresh</servlet-name>
+		<url-pattern>/ServletRefresh</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletCdx1</servlet-name>
+		<url-pattern>/ServletCdx1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletCdx2</servlet-name>
+		<url-pattern>/ServletCdx2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletUserAgent</servlet-name>
+		<url-pattern>/ServletUserAgent</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletParameter</servlet-name>
+		<url-pattern>/ServletParameter</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

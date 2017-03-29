@@ -61,6 +61,36 @@ PrintWriter out = response.getWriter();
 out.println("中国<br/>");
 out.print("java<br/>");
 out.write("hello<br/>");
+
+//设置浏览器不缓存
+response.setHeader("pragma", "no-cache");
+response.setHeader("cache-control", "no-cache");
+response.setHeader("expires", "0");
+
+// 设置自动刷新
+response.setIntHeader("refresh", 1);
+
+//三秒自动跳转到指定页面
+response.setHeader("refresh", "3;url=/javaWeb/");
+
+//重定向访问路径
+response.setStatus(302);
+response.setHeader("location", "/javaWeb/ServletCdx2");
+//重定向访问路径，可以替代以上两行代码
+response.sendRedirect("/javaWeb/ServletCdx2");
+
+//获取指定的消息头
+response.getHeader("location")
+
+//获取请求消息头
+String header = request.getHeader("User-Agent");
+
+//设置请求端字符编码
+request.setCharacterEncoding("utf-8");
+
+
+
+
 ```
 
 
