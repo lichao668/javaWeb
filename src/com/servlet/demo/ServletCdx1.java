@@ -22,7 +22,12 @@ public class ServletCdx1 extends HttpServlet {
 		// response.setStatus(302);
 		// response.setHeader("location", "/javaWeb/ServletCdx2");
 		// 重定向访问路径，可以替代以上两行代码
-		response.sendRedirect("/javaWeb/ServletCdx2");
+//		response.sendRedirect("/javaWeb/ServletCdx2");
+		
+		//请求转发
+		request.getRequestDispatcher("/ServletCdx2").forward(request, response);
+		
+		
 		//获取消息头
 		System.out.println(response.getHeader("location"));
 
@@ -34,3 +39,18 @@ public class ServletCdx1 extends HttpServlet {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

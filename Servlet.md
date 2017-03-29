@@ -88,7 +88,8 @@ String header = request.getHeader("User-Agent");
 //设置请求端字符编码
 request.setCharacterEncoding("utf-8");
 
-
+//请求转发
+request.getRequestDispatcher("/ServletCdx2").forward(request, response);
 
 
 ```
