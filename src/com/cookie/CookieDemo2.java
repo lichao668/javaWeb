@@ -10,15 +10,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class CookieDemo1 extends HttpServlet {
+public class CookieDemo2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
+    public CookieDemo2() {
+        super();
+    }
 
-	public CookieDemo1() {
-		super();
-	}
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 
@@ -32,21 +31,10 @@ public class CookieDemo1 extends HttpServlet {
 				}
 			}
 		}
-		
-		//创建cookie，并保存到客户端
-		Cookie cookie = new Cookie("lastAccessTime",System.currentTimeMillis()+"");
-		
-		//保存有效时间
-		cookie.setMaxAge(60*5);
-		
-		cookie.setPath("/");
-		//保存
-		response.addCookie(cookie);
-		
+	
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
 

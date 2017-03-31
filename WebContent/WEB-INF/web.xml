@@ -73,6 +73,55 @@
 		<servlet-name>CookieDemo1</servlet-name>
 		<servlet-class>com.cookie.CookieDemo1</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CookieDemo2</display-name>
+		<servlet-name>CookieDemo2</servlet-name>
+		<servlet-class>com.cookie.CookieDemo2</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CookieDelete</display-name>
+		<servlet-name>CookieDelete</servlet-name>
+		<servlet-class>com.cookie.CookieDelete</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>JinZhuUserName</display-name>
+		<servlet-name>JinZhuUserName</servlet-name>
+		<servlet-class>com.cookie.JinZhuUserName</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>DoUserName</display-name>
+		<servlet-name>DoUserName</servlet-name>
+		<servlet-class>com.cookie.DoUserName</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SessionDemo</display-name>
+		<servlet-name>SessionDemo</servlet-name>
+		<servlet-class>com.session.SessionDemo</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SessionDemo1</display-name>
+		<servlet-name>SessionDemo1</servlet-name>
+		<servlet-class>com.session.SessionDemo1</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Shopping</display-name>
+		<servlet-name>Shopping</servlet-name>
+		<servlet-class>com.session.Shopping</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>ServletDemo1</servlet-name>
@@ -113,6 +162,34 @@
 	<servlet-mapping>
 		<servlet-name>CookieDemo1</servlet-name>
 		<url-pattern>/CookieDemo1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CookieDemo2</servlet-name>
+		<url-pattern>/CookieDemo2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CookieDelete</servlet-name>
+		<url-pattern>/CookieDelete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JinZhuUserName</servlet-name>
+		<url-pattern>/JinZhuUserName</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DoUserName</servlet-name>
+		<url-pattern>/DoUserName</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionDemo</servlet-name>
+		<url-pattern>/SessionDemo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionDemo1</servlet-name>
+		<url-pattern>/SessionDemo1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Shopping</servlet-name>
+		<url-pattern>/Shopping</url-pattern>
 	</servlet-mapping>
 
 	<welcome-file-list>
